@@ -44,7 +44,8 @@ INCS_Debug := \
 	-I/Users/nono/.node-gyp/5.4.1/include/node \
 	-I/Users/nono/.node-gyp/5.4.1/src \
 	-I/Users/nono/.node-gyp/5.4.1/deps/uv/include \
-	-I/Users/nono/.node-gyp/5.4.1/deps/v8/include
+	-I/Users/nono/.node-gyp/5.4.1/deps/v8/include \
+	-I$(srcdir)/../../../../node_modules/nan
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=pidee' \
@@ -86,7 +87,8 @@ INCS_Release := \
 	-I/Users/nono/.node-gyp/5.4.1/include/node \
 	-I/Users/nono/.node-gyp/5.4.1/src \
 	-I/Users/nono/.node-gyp/5.4.1/deps/uv/include \
-	-I/Users/nono/.node-gyp/5.4.1/deps/v8/include
+	-I/Users/nono/.node-gyp/5.4.1/deps/v8/include \
+	-I$(srcdir)/../../../../node_modules/nan
 
 OBJS := \
 	$(obj).target/$(TARGET)/src/pidee.o
